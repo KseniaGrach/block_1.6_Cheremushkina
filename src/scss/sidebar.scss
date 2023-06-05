@@ -1,0 +1,118 @@
+.sidebar{
+  display: none;
+  position: fixed;
+  width: 320px;
+  min-height: 100vh;
+
+  &--header{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  &--menu{
+    padding-bottom: 90px;
+  }
+
+  &-footer{
+    padding: 0 24px;
+    position: absolute;
+	  bottom: 0;
+  }
+
+  @media (min-width:320.1px) {
+    width: 320px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    position: relative;
+    min-height: 100vh;
+  } 
+}
+
+.nav--brand{
+  margin-right: 52px;
+}
+
+.btn > img{
+  width: 40px;
+  height: 40px;
+}
+
+
+ul{
+  margin: 0 -20px;
+}
+
+li{
+  list-style-type:none;
+  padding: 16px 12px;
+  font-size: 16px;
+
+  &:hover{
+    color: #7E7E82;
+
+    &::before{
+      position: absolute;
+      left: 0;
+      margin: -5px;
+      content: " ";
+      height: 40px;
+      width: 4px;
+      border-radius: 5px;
+      border-right: 5px solid #41F6D7;
+    }
+  }
+}
+
+.sidebar--footer{
+  padding: 0 24px;
+  position: absolute;
+  bottom: 0;
+}
+
+.feedback{
+  padding: 15px 0;
+  display: flex;
+  justify-content: flex-start;
+
+  button{
+    padding-right: 16px;
+  }
+}
+
+.contact--info{
+  display: grid;
+
+  a {
+    text-decoration:none;
+    color:black;
+  }
+}
+
+.mail {
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
+
+.tel{
+  line-height: 32px;
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  padding: 16px 0;
+}
+
+.language button{
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  padding: 32px 7px 32px 0;
+
+  &:first-child{
+    color: #7E7E82;
+  }
+}
+
+

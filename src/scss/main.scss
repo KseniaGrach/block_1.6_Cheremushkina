@@ -1,0 +1,241 @@
+.main {
+  border-top: 1px solid $accent;
+}
+
+.heading {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    margin: -5px;
+    content: " ";
+    height: 40px;
+    width: 4px;
+    border-radius: 5px;
+    border-right: 5px solid #41F6D7;
+  }
+
+  @media (min-width: 768px) and (max-width: 1120px) {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  @media (min-width: 1120.1px) {
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.main--heading {
+  width: 100%;
+  padding: 24px 15px 0 32px;
+  display: flex;
+}
+
+.settings {
+  display: none;
+
+  @media (min-width: 1120.1px) {
+    width: 50%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--img {
+    img {
+      height: 40px;
+      vertical-align: middle;
+      margin: 0px 15px 0px 8px;
+    }
+
+    button{
+      padding: 0;
+      border: none;
+      background: none;  
+      font-size: 16px;
+    }
+  }
+}
+
+.main--menu {
+  display: flex;
+  padding: 24px 16px;
+  overflow-x: auto;
+
+  @media (min-width: 768px) and (max-width: 1120px) {
+    display: flex;
+    padding: 24px;
+    overflow-x: auto;
+  }
+
+  @media (min-width: 1120.1px) {
+    display: flex;
+    padding: 24px 32px;
+    overflow-x: auto;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &::after {
+      position: absolute;
+      right: 0;
+      margin: 0;
+      content: "";
+      height: 50px;
+      width: 40px;
+      background: linear-gradient(270deg, $bgColor 30%, rgba(248, 248, 248, 0.0001) 100%);
+  }
+
+  &--btn {
+    background-color: transparent;
+    border: 0;
+    padding: 10px 12px;
+    font-size: 16px;
+    color: #7E7E82;
+    white-space: nowrap;
+  }
+
+  &--btn:hover {
+    background-color: white;
+    border: 2px solid $accent;
+    border-radius: 6px;
+    padding: 8px 10px;
+  }
+}
+
+.main--heading {
+  @media (min-width: 1120.1px) {
+    width: 100%;
+    padding: 24px 15px 0 32px;
+    display: flex;
+  }
+}
+
+.main--post {
+  @media (min-width: 768px) and (max-width: 1120px) {
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  @media (min-width: 1120.1px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 50px 13px;
+  }
+}
+
+.post--text{
+  @media (min-width: 768px) and (max-width: 1120px) {
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding: 0 24px 10px 24px;
+    width: 50%;
+  }
+
+  @media (min-width: 1120.1px) {
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    width: 47%;
+  }
+
+  p{
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    padding: 0 16px;
+    white-space:pre-wrap;
+    margin: 0;
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+
+    @media (min-width: 768px) and (max-width: 1120px) {
+      height: 165px;
+      line-height: 20px;
+      padding: 5px 16px 0 0;
+    }
+
+    @media (min-width: 1120.1px) {
+      height: 170px;
+      line-height: 20px;
+      padding: 10px 16px 0;
+    }
+  }
+}
+
+.post--more{
+  padding: 15px 0;
+  font-size: 16px;
+
+  @media (min-width: 768px) and (max-width: 1120px) {
+    padding-top: 15px;
+  
+    img{
+      padding-left: 9px;
+    }
+  
+    span {
+      padding-left: 16px;
+      padding-top: 16px;
+    }
+  }
+}
+
+.post__btn--more{
+  padding: 0 0 0 8px;
+  border: none;
+  background: none;
+
+  span {
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &::before {
+    content: url('/src/img/more.svg');
+    position: relative;
+    left: 10px;
+  }
+
+  @media (min-width: 1120.1px) {
+    padding: 0 0 0 12px;
+  }
+}
+
+.post--img {
+  padding: 16px 0;
+
+  @media (min-width: 768px) and (max-width: 1120px) {
+    width: 50%; 
+    padding: 0 24px 10px 24px;
+  }
+
+  @media (min-width: 1120.1px) {
+    width: 50%;  
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+
+    @media (min-width: 768px) and (max-width: 1120px) {
+      border-radius: 6px;
+    }
+
+    @media (min-width: 1120.1px) {
+      border-radius: 6px;
+    }
+  } 
+}
+
