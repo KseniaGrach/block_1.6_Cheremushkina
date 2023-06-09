@@ -231,7 +231,7 @@
     font-size: 16px;
     font-weight: 500; }
   .post__btn--more::before {
-    content: url("/src/img/more.svg");
+    content: url(./static/more.svg);
     position: relative;
     left: 10px; }
   @media (min-width: 1440.1px) {
@@ -356,18 +356,18 @@
         padding-top: 16px; } }
   @media (min-width: 768px) and (max-width: 1440px) {
     .btn--show--hide::before {
-      content: url("/src/img/more.svg");
+      content: url(./static/more.svg);
       position: relative;
       left: 10px; } }
   @media (min-width: 1440.1px) {
     .btn--show--hide::before {
-      content: url("/src/img/more.svg");
+      content: url(./static/more.svg);
       position: relative;
       left: 10px; } }
   @media (min-width: 768px) and (max-width: 1440px) {
     .btn--show--hide.hide::before {
       display: inline-block;
-      content: url("/src/img/more.svg");
+      content: url(./static/more.svg);
       transform: rotate(180deg);
       position: relative;
       left: 10px;
@@ -375,7 +375,7 @@
   @media (min-width: 1440.1px) {
     .btn--show--hide.hide::before {
       display: inline-block;
-      content: url("/src/img/more.svg");
+      content: url(./static/more.svg);
       transform: rotate(180deg);
       position: relative;
       left: 10px;
@@ -812,21 +812,21 @@ footer {
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("/src/fonts/TTLakes-Regular.woff2") format("woff2"), url("/src/fonts/TTLakes-Regular.woff") format("woff");
+  src: url(./fonts/TTLakes-Regular.woff2) format("woff2"), url(./fonts/TTLakes-Regular.woff) format("woff");
   font-weight: 400;
   font-display: swap;
   font-style: normal; }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("/src/fonts/TTLakes-Medium.woff2") format("woff2"), url("/src/fonts/TTLakes-Medium.woff") format("woff");
+  src: url(./fonts/TTLakes-Medium.woff2) format("woff2"), url(./fonts/TTLakes-Medium.woff) format("woff");
   font-weight: 500;
   font-display: swap;
   font-style: normal; }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("/src/fonts/TTLakes-Bold.woff2") format("woff2"), url("/src/fonts/TTLakes-Bold.woff") format("woff");
+  src: url(./fonts/TTLakes-Bold.woff2) format("woff2"), url(./fonts/TTLakes-Bold.woff) format("woff");
   font-weight: 700;
   font-display: swap;
   font-style: normal; }
