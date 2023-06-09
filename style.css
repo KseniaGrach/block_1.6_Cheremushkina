@@ -267,6 +267,10 @@
     height: 260px;
     overflow: hidden; } }
 
+@media (min-width: 768px) {
+  .swiper-pagination {
+    display: none; } }
+
 .swiper {
   width: 100%;
   height: 234px;
