@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (window.innerWidth <= 768) {
           if (!init) {
               init = true;
-              swiper = new Swiper('.swiper', {
+              window.swiper = new Swiper('.swiper', {
                 direction: 'horizontal',
                 slidesPerView: "auto",
                 loop: true,
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
             });
           }
       } else if (init) {
-          swiper.forEach(e => e.destroy());
+        swiper.forEach(e => e.destroy());
           init = false;
       }
   }
