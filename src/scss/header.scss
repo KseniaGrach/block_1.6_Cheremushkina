@@ -6,7 +6,7 @@
     margin: 0;
     padding: 18px 24px;
     top: 0;
-    background-color: white;
+    background-color: $colorAccent;
 
     &__items {
       width: 100%;
@@ -19,12 +19,12 @@
       background: none;
     }
 
-    .btn-burger{
+    .sidebar__btn--toggle{
       display: flex;
       border: none;
       background: none;
 
-      @media (min-width: 768px) and (max-width: 1120px) {
+      @media (min-width: 768px) and (max-width: 1440px) {
         &::after {
           display: flex;
           position: relative;
@@ -33,7 +33,7 @@
           content: " ";
           height: 32px;
           width: 2px;
-          background: #EAEAEA;
+          background: $bgColor;
           border-radius: 1px;
         } 
       }
@@ -44,7 +44,7 @@
       width: 40px;
     }
 
-@media (min-width: 1120.1px) {
+@media (min-width: 1440.1px) {
     display: none;
  }
 }
@@ -52,7 +52,7 @@
 .items--contact {
   display: none;
 
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
       margin-left: auto;
       display: flex;
       justify-content: space-around;
@@ -85,7 +85,7 @@
     content: " ";
     height: 32px;
     width: 2px;
-    background: #EAEAEA;
+    background: $bgColor;
     border-radius: 1px;
   }
 }

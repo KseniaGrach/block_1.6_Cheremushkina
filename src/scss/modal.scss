@@ -1,0 +1,257 @@
+.modal--mail{
+  display: none;
+  width: 320px;
+  position: fixed;
+  min-height: 100vh;
+  background-color: $colorAccent;
+  z-index: 10;
+  right: 0;
+
+  @media (min-width: 768px) {
+    width: 440px;
+  }
+
+
+
+  &.is-open {
+    display: block;
+    top: 0;
+  }
+
+  &.is-open .modal--mail--background {
+    position: absolute;
+    top: 0;
+    right: 320px;
+    background-color: $colorAccent;
+    opacity: 0.9;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), inset 16px 0px 52px rgba(14, 24, 80, 0.2);
+  
+    @media (min-width: 768px) {
+      right: 440px;
+    }
+  }
+
+  .btn--modal--mail--toggle{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 24px 0 0 16px;
+
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  button.btn--modal--mail--toggle{
+    @media (min-width: 768px) {
+      position: absolute;
+      left: -80px;
+      z-index: 11;
+    }
+  }
+
+  .btn--submit{
+    position: relative;
+    left: 180px;
+    background-color: $colorBtn;
+    width: 119px;
+    height: 32px;
+    color: $colorAccent;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      left: 290px;
+      width: 136px;
+    }
+
+    img{
+      height: 10px;
+      margin: auto 7px;
+    }
+  }
+
+  input#text{
+    padding: 20px 16px 50px 16px;
+  }
+
+  .modal--mail--header{
+    padding: 40px 32px 24px 32px;
+    margin: 0;
+    position: relative;
+
+    &::before{
+      position: absolute;
+      left: 0px;
+      content: " ";
+      height: 40px;
+      width: 4px;
+      margin: -5px;
+      border-radius: 5px;
+      border-right: 5px solid rgb(65, 246, 215);
+  }
+
+    span{
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+
+
+  input{
+    width: 280px;
+    height: 48px;
+    margin: 8px 16px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid $bgColor;
+
+    @media (min-width: 768px) {
+      width: 376px;
+    }
+  }
+
+  form {
+    p {
+      padding: 8px 16px;
+
+      a {
+        color: $colorBtn;
+      }
+    }
+  }
+}
+
+.modal--tel{
+  display: none;
+  width: 320px;
+  position: fixed;
+  min-height: 100vh;
+  background-color: $colorAccent;
+  z-index: 10;
+  right: 0;
+
+  @media (min-width: 768px) {
+    width: 440px;
+  }
+
+
+
+  &.is-open {
+    display: block;
+    top: 0;
+  }
+
+  &.is-open .modal--tel--background {
+    position: absolute;
+    top: 0;
+    right: 320px;
+    background-color: $colorAccent;
+    opacity: 0.9;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), inset 16px 0px 52px rgba(14, 24, 80, 0.2);
+  
+    @media (min-width: 768px) {
+      right: 440px;
+    }
+  }
+
+  .btn--modal--tel--toggle{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 24px 0 0 16px;
+
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  button.btn--modal--tel--toggle{
+    @media (min-width: 768px) {
+      position: absolute;
+      left: -80px;
+      z-index: 11;
+    }
+  }
+
+  .btn--submit{
+    position: relative;
+    left: 180px;
+    background-color: $colorBtn;
+    width: 119px;
+    height: 32px;
+    color: $colorAccent;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      left: 290px;
+      width: 136px;
+    }
+
+    img{
+      height: 10px;
+      margin: auto 7px;
+    }
+  }
+
+  .modal--tel--header{
+    padding: 40px 32px 24px 32px;
+    margin: 0;
+    position: relative;
+
+    &::before{
+      position: absolute;
+      left: 0px;
+      content: " ";
+      height: 40px;
+      width: 4px;
+      margin: -5px;
+      border-radius: 5px;
+      border-right: 5px solid rgb(65, 246, 215);
+  }
+
+    span{
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+
+
+  input{
+    width: 280px;
+    height: 48px;
+    margin: 8px 16px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid $bgColor;
+
+    @media (min-width: 768px) {
+      width: 376px;
+    }
+  }
+
+  form {
+    p {
+      padding: 8px 16px;
+
+      a {
+        color: $colorBtn;
+      }
+    }
+  }
+}

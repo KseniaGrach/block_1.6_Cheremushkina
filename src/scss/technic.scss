@@ -1,10 +1,10 @@
 .swiper--container {
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     height: 260px;
     overflow: hidden;
   }
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     height: 260px;
     overflow: hidden;
   }
@@ -13,14 +13,10 @@
 .swiper {
   width: 100%;
   height: 234px;
-  border-top: 1px solid #D9FFF5;
+  border-top: 1px solid $accent;
 
-  @media (min-width: 768px) and (max-width: 1120px) {
-    height: auto;
-  }
-
-  @media (min-width: 1120.1px) {
-    height: auto;
+  @media (min-width: 768px) {
+    height: 265px;
   }
 
   &-slide {
@@ -28,12 +24,16 @@
   }
 
   &--header {
-    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    background: linear-gradient(90deg, $bgColor 0%, $colorAccent 98.61%);
     padding: 18px;
     margin: 0;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      padding: 18px 32px;
+    }
   }
   
   &-slide--btn {
@@ -46,6 +46,7 @@
     width: 12px !important;
     height: 12px !important;
   }
+
   &-pagination-bullet-active {
     background-color: #B5B6BC !important;
   }
@@ -57,31 +58,28 @@
 }
 
 .swiper-wrapper {
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) {
     flex-wrap: wrap;
-  }
-
-  @media (min-width: 1120.1px) {
-    flex-wrap: wrap;
+    height: auto;
   }
 }
 
 .slide--card { 
   width: 240px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid $bgColor;
   border-radius: 6px;
   display: flex;
   justify-content: space-between; 
   margin: 16px 0 16px 16px;
   padding: 20px 16px;
-  background-color: #ffffff;
+  background-color: $colorAccent;
 
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     width: 224px;
-    margin: 16px 0 0 24px;
+    margin: 16px 0 0 32px;
   }
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     width: 240px;
     margin: 16px 0 0 32px;
   }
@@ -100,13 +98,13 @@
   border: none;
   background: none;
 }
- 
-.brand--more{
+
+.btn--show--hide{
   display: none;
 
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
       display: block;
-      padding: 10px 0 0 24px;
+      padding: 10px 0 10px 24px;
     
     img{
       padding-left: 9px;
@@ -118,7 +116,7 @@
     }
   }
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
       display: block;
       padding: 10px 0 24px 24px;
 
@@ -131,43 +129,15 @@
       padding-top: 16px;
     }
   }
-}
-
-.brand__btn--show--hide{
-  @media (min-width: 768px) and (max-width: 1120px) {
-    padding: 0;
-    border: none;
-    background: none;
-  }
-
-  @media (min-width: 1120.1px) {
-    padding: 0 0 0 8px;
-    border: none;
-    background: none;
-  }
-
-  span {
-    @media (min-width: 768px) and (max-width: 1120px) {
-      padding-left: 25px;
-      font-size: 16px;
-      font-weight: 500;
-    }
-
-    @media (min-width: 1120.1px) {
-      padding-left: 25px;
-      font-size: 16px;
-      font-weight: 500;
-    }
-  }
   
   &::before  {
-    @media (min-width: 768px) and (max-width: 1120px) {
+    @media (min-width: 768px) and (max-width: 1440px) {
       content: url('/src/img/more.svg');
       position: relative;
       left: 10px;
     }
 
-    @media (min-width: 1120.1px) {
+    @media (min-width: 1440.1px) {
       content: url('/src/img/more.svg');
       position: relative;
       left: 10px;
@@ -175,7 +145,7 @@
   }
 
   &.hide::before {
-    @media (min-width: 768px) and (max-width: 1120px) {
+    @media (min-width: 768px) and (max-width: 1440px) {
       display: inline-block;
       content: url('/src/img/more.svg');
       transform: rotate(180deg);
@@ -184,7 +154,7 @@
       top: -4px;
     }
 
-    @media (min-width: 1120.1px) {
+    @media (min-width: 1440.1px) {
       display: inline-block;
       content: url('/src/img/more.svg');
       transform: rotate(180deg);
@@ -195,4 +165,164 @@
   }
 }
 
+.types {
+  & .swiper {
+      width: 100%;
+      height: 300px;
+
+    @media (min-width: 768px) {
+      height: 420px;
+    }
+  }
+
+  & .slide--card {
+    height: 160px;
+    font-size: 16px;
+    font-weight: 500;
+  
+    img{
+      position: relative;
+      top: 80px;
+    }
+  }
+}
+
+.services {
+  .swiper-wrapper{
+    @media (min-width: 768px) {
+      
+    }
+  }
+
+  & .swiper {
+      width: 100%;
+      height: 320px;
+
+    @media (min-width: 768px) {
+      height: auto;
+      padding: 0 32px;
+    }
+
+    &--header {
+      @media (min-width: 768px) {
+        margin: 0 -32px;
+      }
+    }
+
+    &-slide{
+      @media (min-width: 768px) {
+        width: 100%;
+      }
+    } 
+  }
+
+  
+
+  & .slide--card--header {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 360px 100px 35%;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      padding: 30px 16px 16px; 
+      margin: 0;
+
+      p{
+        font-size: 14px;
+        width: 100%;
+        text-align:left;
+        margin: 0;
+
+        &:nth-child(2){
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  & .slide--card {
+    height: 200px;
+    width: 260px;
+    font-size: 14px;
+    font-weight: 500;
+    flex-direction: column;
+    padding: 16px;
+
+   
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      padding: 23px 16px; 
+      margin: 0;
+      display: grid;
+      grid-template-columns: 360px auto 10% auto;
+    }
+
+    p{
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      white-space:pre-wrap;
+      margin: 0;
+      width: 100%;
+      overflow: hidden;
+      text-align:left;
+
+      &:nth-child(2n + 1){
+        color: $textAccent;
+        font-weight: 400;
+    
+          @media (min-width: 768px) {
+            display: none;
+          }
+        }
+    }
+  
+    .btn--go {
+      position: absolute;
+      top: 170px;
+      left: 145px;
+      background-color: $colorBtn;
+      border-radius: 16px;
+      width: 119px;
+      height: 32px;
+      color: $colorAccent;
+      font-size: 11px;
+      font-weight: 700;
+
+      @media (min-width: 768px) {
+        position: sticky;
+        top: 15px;
+        left: 150px;
+        width: 150px;
+      }
+
+      span{
+        @media (min-width: 768px) {
+          margin: 0 20px;
+        }
+      }
+
+      img{
+        height: 10px;
+        width: 10px;
+        margin: 0 10px;
+
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+    
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
 

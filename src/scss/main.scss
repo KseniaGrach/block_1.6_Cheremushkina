@@ -1,3 +1,10 @@
+.content {
+  @media (min-width: 1440px) {
+    position: absolute;
+    left: 320px;
+  }
+}
+
 .main {
   border-top: 1px solid $accent;
 }
@@ -15,16 +22,16 @@
     height: 40px;
     width: 4px;
     border-radius: 5px;
-    border-right: 5px solid #41F6D7;
+    border-right: 5px solid $brightAccent;
   }
 
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     margin: 0;
     font-size: 28px;
     font-weight: 700;
   }
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     padding: 0;
     margin: 0;
     font-size: 28px;
@@ -41,7 +48,7 @@
 .settings {
   display: none;
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     width: 50%;
     margin-left: auto;
     display: flex;
@@ -69,13 +76,13 @@
   padding: 24px 16px;
   overflow-x: auto;
 
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     display: flex;
     padding: 24px;
     overflow-x: auto;
   }
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     display: flex;
     padding: 24px 32px;
     overflow-x: auto;
@@ -101,12 +108,12 @@
     border: 0;
     padding: 10px 12px;
     font-size: 16px;
-    color: #7E7E82;
+    color: $textAccent;
     white-space: nowrap;
   }
 
   &--btn:hover {
-    background-color: white;
+    background-color: $colorAccent;
     border: 2px solid $accent;
     border-radius: 6px;
     padding: 8px 10px;
@@ -114,7 +121,7 @@
 }
 
 .main--heading {
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     width: 100%;
     padding: 24px 15px 0 32px;
     display: flex;
@@ -122,12 +129,12 @@
 }
 
 .main--post {
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     display: flex;
     justify-content: space-between;
   } 
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     display: flex;
     justify-content: space-between;
     padding: 0 30px 50px 13px;
@@ -135,14 +142,14 @@
 }
 
 .post--text{
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     font-weight: 400;
     letter-spacing: 0.2px;
     padding: 0 24px 10px 24px;
     width: 50%;
   }
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     font-weight: 400;
     letter-spacing: 0.2px;
     width: 47%;
@@ -150,6 +157,7 @@
 
   p{
     font-weight: 400;
+    font-size: 14px;
     letter-spacing: 0.2px;
     line-height: 18px;
     padding: 0 16px;
@@ -159,13 +167,13 @@
     width: 100%;
     overflow: hidden;
 
-    @media (min-width: 768px) and (max-width: 1120px) {
+    @media (min-width: 768px) and (max-width: 1440px) {
       height: 165px;
       line-height: 20px;
       padding: 5px 16px 0 0;
     }
 
-    @media (min-width: 1120.1px) {
+    @media (min-width: 1440.1px) {
       height: 170px;
       line-height: 20px;
       padding: 10px 16px 0;
@@ -177,7 +185,7 @@
   padding: 15px 0;
   font-size: 16px;
 
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     padding-top: 15px;
   
     img{
@@ -208,7 +216,7 @@
     left: 10px;
   }
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     padding: 0 0 0 12px;
   }
 }
@@ -216,12 +224,12 @@
 .post--img {
   padding: 16px 0;
 
-  @media (min-width: 768px) and (max-width: 1120px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     width: 50%; 
     padding: 0 24px 10px 24px;
   }
 
-  @media (min-width: 1120.1px) {
+  @media (min-width: 1440.1px) {
     width: 50%;  
     padding: 0;
   }
@@ -229,11 +237,11 @@
   img {
     width: 100%;
 
-    @media (min-width: 768px) and (max-width: 1120px) {
+    @media (min-width: 768px) and (max-width: 1440px) {
       border-radius: 6px;
     }
 
-    @media (min-width: 1120.1px) {
+    @media (min-width: 1440.1px) {
       border-radius: 6px;
     }
   } 

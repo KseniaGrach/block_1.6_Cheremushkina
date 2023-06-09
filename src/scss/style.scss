@@ -1,11 +1,17 @@
 $bgColor: #F8F8F8;
 $text: #000000;
+$textAccent: #7E7E82;
 $accent: #D9FFF5;
+$brightAccent: #41F6D7;
+$colorAccent: #ffffff;
+$colorBtn: #FF3E79;
 
 @import 'header.scss';  
 @import 'main.scss'; 
 @import 'technic.scss'; 
 @import 'sidebar.scss'; 
+@import 'modal.scss'; 
+@import 'footer.scss'; 
 
 @font-face {
   font-family: "TT Lakes";
@@ -44,6 +50,7 @@ body {
   margin: 0;
   background-color: $bgColor;
   color: $text;
+  
 }
 
 .btn {
